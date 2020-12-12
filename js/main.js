@@ -83,10 +83,13 @@ function initObject() {
 
 function gameLoop() {
   switch (gameState) {
+    // 菜单界面
     case GAME_STATE_MENU:
       menu.draw()
       break
+    // 按下开始键，但是还未准备好时
     case GAME_STATE_INIT:
+      // 在绘制了，绘制完进入下一阶段
       stage.draw()
       if (stage.isReady == true) {
         gameState = GAME_STATE_START
@@ -114,6 +117,7 @@ function gameLoop() {
 
 $(document).keydown(function (e) {
   switch (gameState) {
+    // 开始界面监听
     case GAME_STATE_MENU:
       if (e.keyCode == keyboard.ENTER) {
         gameState = GAME_STATE_INIT

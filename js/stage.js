@@ -31,13 +31,13 @@ var Stage = function (context, l) {
           78,
           14
         )
-        //14为数字的宽和高，308, 208为canvas中的位置
+        // 14为数字的宽和高，308, 208为canvas中的位置
         this.levelNum.draw(this.level, 308, 208)
-        //this.ctx.drawImage(RESOURCE_IMAGE,POS["num"][0]+this.level*14,POS["num"][1],14, 14,308, 208,14, 14);
-        //绘制地图,调用main里面的方法
+        // this.ctx.drawImage(RESOURCE_IMAGE,POS["num"][0]+this.level*14,POS["num"][1],14, 14,308, 208,14, 14);
+        // 绘制地图,调用main里面的方法
         initMap()
       } else if (this.temp == 225 + 600) {
-        //600即调用了600/15次，主要用来停顿
+        // 600即调用了600/15次，主要用来停顿
         this.temp = 225
         this.dir = -1
         START_AUDIO.play()
@@ -60,9 +60,11 @@ var Stage = function (context, l) {
           this.drawHeigth
         )
       } else {
+        // 灰色部分退去即是游戏开始
         this.isReady = true
       }
     }
+    // 实际动画在这里
     this.temp += this.drawHeigth * this.dir
   }
 }
