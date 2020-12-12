@@ -16,6 +16,7 @@
 
 ### 项目结构
 
+```
 ├── audio
 │ ├── attack.mp3
 │ ├── bulletCrack.mp3
@@ -48,5 +49,6 @@
 │ ├── stage.js //过关过场
 │ └── tank.js // 坦克实体以及坦克行为
 └── readme.md
+```
 
 # 游戏原理
