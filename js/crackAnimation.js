@@ -20,6 +20,7 @@ var CrackAnimation = function(type,context,crackObj){
 		this.size = 32;
 		this.frame = 3;
 	}
+	// 计算偏移量确保爆炸在爆炸物中心
 	this.x = crackObj.x + (parseInt(crackObj.size - this.size)/2);
 	this.y = crackObj.y + (parseInt(crackObj.size - this.size)/2);
 	
