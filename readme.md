@@ -2,7 +2,7 @@
 
 ### 技术栈介绍
 
-本游戏未使用任何框架，用 js、css 以及 html 的 canvas 实现
+本游戏未使用任何的框架，用 js、css 以及 html 的 canvas 实现
 
 ### 界面构成
 
